@@ -4,49 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Style/style.css">
+    
     <title>Juegos</title>
+    <!-- Logo de pestaña -->
     <link rel="shortcut icon" href="../Multimedia/Imagenes/Logo 1 modificado.png" type="image/x-icon">
+    <!-- Linkeando bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- linkeando CSS -->
+    <link rel="stylesheet" href="../Style/style.css">
+
 </head>
 <body class="Fondo">
-    <header class="header">
-        <div class="logo">
-            <a href="../index.html"><img src="../Multimedia/Imagenes/Logo 1 modificado.png" alt="logo"></a>
-        </div>
-        <div>
-            <nav>
-                <ul class="menu">
-                    <li class="menu-item">
-                        <a href="../index.html">INICIO</a>
-                    </li>
-                    <li class="menu-item active">
-                        <a class="active_color" href="../Page/Juegos.html">JUEGOS</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="../Page/Consolas.html">CONSOLAS</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="../Page/ProximoLanzamientos.html">PROXIMOS LANZAMIENTOS</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="../Page/Contacto.html">CONTACTO</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="../Page/Ingreso.html">INGRESAR</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="../Page/Registro.html">REGISTRAR</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+    <header>
+
+        <!-- Aplicando bootstraps -->
+
+        <nav class="navbar navbar-expand-xl">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="logo" src="../Multimedia/Imagenes/Logo 1 modificado.png" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0  menu">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../Page/Juegos.html">JUEGOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Page/Consolas.html">CONSOLAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Page/ProximoLanzamientos.html">NOVEDADES</a>
+                        </li>
+                        <li class="nav-item justify-content-end">
+                            <a class="nav-link" href="../Page/Contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../Page/Ingreso.html">INGRESAR</a>
+                        </li>
+                        <li class="nav-item justify-content-end">
+                            <a class="nav-link" href="../Page/Registro.html">REGISTRARSE</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="BUSCAR" aria-label="Search">
+                        <button class="btn btn-primary" type="submit">BUSCAR</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
         <!-- Menu de los Juegos -->
         <section class="game">
             <div class="juegos">
-                <img class="juegos_img" src="../multimedia/Imagenes/Juegos/elden_ring-4886269.webp" height="250px" alt="Elden Ring">
+                <img class="juegos_img" src="../Multimedia/Imagenes/Juegos/elden_ring-4886269.webp" height="250px" alt="Elden Ring">
                 <h4 class="juegos_titulo">Elden Ring</h4>
                 <p class="juegos_consolas">PC-PS4-PS5-XSeries-XOne</p>
                 <h5 class="juegos_precio">Precio</h5>
@@ -54,7 +71,7 @@
                 <span class="juegos_comprar"><button type="button"><a href="./Juegos.html">Comprar</a></button></span>
             </div>
             <div class="juegos">
-                <img class="juegos_img" src="../multimedia/Imagenes/Juegos/Dragon ball the Breakers.webp" height="250px" alt="Dragon Ball Breakers">
+                <img class="juegos_img" src="../Multimedia/Imagenes/Juegos/Dragon ball the Breakers.webp" height="250px" alt="Dragon Ball Breakers">
                 <h4 class="juegos_titulo">Dragon Ball Breakers</h4>
                 <p class="juegos_consolas">PC-PS4-PS5-XSeries-XOne-Switch</p>
                 <h5 class="juegos_precio">Precio</h5>
@@ -62,7 +79,7 @@
                 <span class="juegos_comprar"><button type="button"><a href="./Juegos.html">Comprar</a></button></span>
             </div>
             <div class="juegos">
-                <img class="juegos_img" src="../multimedia/Imagenes/Juegos/fifa_23-5756987.webp" height="250px" alt="Fifa 23">
+                <img class="juegos_img" src="../Multimedia/Imagenes/Juegos/fifa_23-5756987.webp" height="250px" alt="Fifa 23">
                 <h4 class="juegos_titulo">FIFA 23</h4>
                 <p class="juegos_consolas">PC-PS4-PS5-XSeries-XOne</p>
                 <h5 class="juegos_precio">Precio</h5>
@@ -70,7 +87,7 @@
                 <span class="juegos_comprar"><button type="button"><a href="./Juegos.html">Comprar</a></button></span>
             </div>
             <div class="juegos">
-                <img class="juegos_img" src="../multimedia/Imagenes/Juegos/god_of_war_ragnarok-5732813.webp" height="250px" alt="God of war ragnarok">
+                <img class="juegos_img" src="../Multimedia/Imagenes/Juegos/god_of_war_ragnarok-5732813.webp" height="250px" alt="God of war ragnarok">
                 <h4 class="juegos_titulo">God of war Ragnarok</h4>
                 <p class="juegos_consolas">PS4-PS5</p>
                 <h5 class="juegos_precio">Precio</h5>
@@ -78,7 +95,7 @@
                 <span class="juegos_comprar"><button type="button"><a href="./Juegos.html">Comprar</a></button></span>
             </div>
             <div class="juegos">
-                <img class="juegos_img" src="../multimedia/Imagenes/Juegos/forspoken.png" height="250px" alt="Forspoken">
+                <img class="juegos_img" src="../Multimedia/Imagenes/Juegos/forspoken.png" height="250px" alt="Forspoken">
                 <h4 class="juegos_titulo">Forspoken</h4>
                 <p class="juegos_consolas">PC-PS5</p>
                 <h5 class="juegos_precio">Precio</h5>
@@ -86,7 +103,7 @@
                 <span class="juegos_comprar"><button type="button"><a href="./Juegos.html">Comprar</a></button></span>
             </div>
             <div class="juegos">
-                <img class="juegos_img" src="../multimedia/Imagenes/Juegos/One Piece Odyssey.png" height="250px" alt="One Piece Odyssey">
+                <img class="juegos_img" src="../Multimedia/Imagenes/Juegos/One Piece Odyssey.png" height="250px" alt="One Piece Odyssey">
                 <h4 class="juegos_titulo">One Piece Odyssey</h4>
                 <p class="juegos_consolas">PC-PS4-PS5-XSeries</p>
                 <h5 class="juegos_precio">Precio</h5>
@@ -94,7 +111,7 @@
                 <span class="juegos_comprar"><button type="button"><a href="./Juegos.html">Comprar</a></button></span>
             </div>
             <div class="juegos">
-                <img class="juegos_img" src="../multimedia/Imagenes/Juegos/resident_evil_8-5391188.webp" height="250px" alt="Resident Evil 8">
+                <img class="juegos_img" src="../Multimedia/Imagenes/Juegos/resident_evil_8-5391188.webp" height="250px" alt="Resident Evil 8">
                 <h4 class="juegos_titulo">Resident Evil 8</h4>
                 <p class="juegos_consolas">PC-PS4-PS5-XSeries-XOne-Switch</p>
                 <h5 class="juegos_precio">Precio</h5>
@@ -102,14 +119,14 @@
                 <span class="juegos_comprar"><button type="button"><a href="./Juegos.html">Comprar</a></button></span>
             </div>
             <div class="juegos">
-                <img class="juegos_img" src="../multimedia/Imagenes/Juegos/spiderman_ps4__nombre_provisional_-4004812.webp" height="250px" alt="Spider Man">
+                <img class="juegos_img" src="../Multimedia/Imagenes/Juegos/spiderman_ps4__nombre_provisional_-4004812.webp" height="250px" alt="Spider Man">
                 <h4 class="juegos_titulo">Spider Man</h4>
                 <p class="juegos_consolas">PC-PS4-PS5</p>
                 <h5 class="juegos_precio">Precio</h5>
                 <h5 class="juegos_trailers"><a href="https://www.youtube.com/watch?v=NTunTURbyUU" target="_blank">Trailer Spider Man</a></h5>
                 <span class="juegos_comprar"><button type="button"><a href="./Juegos.html">Comprar</a></button></span>
             </div>
-           
+        
         </section>
     </main>
 
@@ -122,6 +139,8 @@
             <a href=""><img src="../Multimedia/Fondos/icono de linkedin.png" alt="icono de linkedin"></a>
         </div>
     </footer>
-    
+
+<!-- Linkeando javascrip de bootstrap -->    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

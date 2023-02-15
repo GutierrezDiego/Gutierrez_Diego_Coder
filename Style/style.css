@@ -158,53 +158,42 @@
 
                                      /* trabajando sobre el menu de las paginas secundarias */
 
-.header{
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-    align-items: center;
-    padding-inline: 20px;
-    
-}
-.logo img{
-    width: 100px;
+.logo{
+    width: 80px;
     margin: 10px;
     border-radius: 35%;
 }
-.menu-item{
-    padding-inline: 15px;
-}
-.menu{
-    display: flex;
-    list-style-type: none;
-    gap: 10px; 
-}
+
 .menu li{
     font-size: 20px;
     font-weight: bold;
-}
-.menu li a{
     background-color: gold;
-    padding: 5px;
-    border-radius: 10px;
-    text-decoration: none;
-    color: darkblue;
+    border-radius: 50%;
+    margin-inline: 5px;
+} 
+.menu li a{
+    color: black;  
 }
+
+
 
         /* Aplicando animaciones sobre el menu de las pag secundarias */
 
-.menu li:hover{
-    font-size: 30px;
-    transition-delay: 0.2s;
+.menu li a:hover{
+    font-size: 25px;
+    color: blue;
 }
-.logo img:hover{
-    width: 115px;
+.logo:hover{
+    width: 85px;
     transition-delay: 0.1s;
 }
+
+.active,
 .active a{
-    font-size: 25px; 
-    border:darkblue solid 6px;
+    text-decoration: underline double black;
+    font-size: 25px;
 }
+
 
 
 
@@ -363,7 +352,7 @@
 .proximos_lanzamientos_titulo{
     margin-top: 60px;
     text-align: center;
-    font-size: 70px;
+    font-size: 65px;
     color: white;
     font-weight: bold;
     margin-bottom: 80px;
@@ -453,18 +442,18 @@
 }
 
 @keyframes contactenos_prox {
-   25%{
-    color: mediumblue;
-    font-size: 72px;
-   }
-   50%{
-    color: red;
-    font-size: 70px;
-   }
-   75%{
-    color: yellow;
-    font-size: 68px;
-   }
+    25%{
+        color: mediumblue;
+        font-size: 68px;
+    }
+    50%{
+        color: red;
+        font-size: 65px;
+    }
+    75%{
+        color: yellow;
+        font-size: 62px;
+    }
     
 }
 .proximos_lanzamientos_titulo{
@@ -504,8 +493,8 @@
 }
 
 .ingresar_formulario{ 
-    width: 400px;
-    height: 260px;
+    width: 480px;
+    height: 350px;
     background-color: mediumslateblue;
     padding: 20px;
     border-radius: 50px;
@@ -574,35 +563,35 @@
 
 .ingresar_formulario {
 	-webkit-animation: tilt-in-fwd-tr 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: tilt-in-fwd-tr 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: tilt-in-fwd-tr 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
             animation-delay: 0.4s;
 }
 
- @-webkit-keyframes tilt-in-fwd-tr {
+@-webkit-keyframes tilt-in-fwd-tr {
     0% {
-      -webkit-transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
-              transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
-      opacity: 0;
+    -webkit-transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+            transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+    opacity: 0;
     }
     100% {
-      -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
-              transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
-      opacity: 1;
+    -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+            transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    opacity: 1;
     }
-  }
-  @keyframes tilt-in-fwd-tr {
+}
+@keyframes tilt-in-fwd-tr {
     0% {
-      -webkit-transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
-              transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
-      opacity: 0;
+    -webkit-transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+            transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+    opacity: 0;
     }
     100% {
-      -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
-              transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
-      opacity: 1;
+    -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+            transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    opacity: 1;
     }
-  }
-  
+}
+
 
 .ingresar_boton:hover{
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
@@ -612,7 +601,7 @@
     color: red;
     font-size: 18px;
 }
-  
+
         
 
                              /* Trabajando sobre HTML Registrarse */
@@ -643,8 +632,8 @@
 }
 
 .registrarse_formulario{
-    width: 460px;
-    height: 380px;
+    width: 480px;
+    height: 450px;
     background-color: mediumslateblue;
     padding: 20px;
     border-radius: 50px;
@@ -736,30 +725,30 @@
             
 }
 
- @-webkit-keyframes flip-in-hor-bottom {
+@-webkit-keyframes flip-in-hor-bottom {
     0% {
-      -webkit-transform: rotateX(80deg);
-              transform: rotateX(80deg);
-      opacity: 0;
+    -webkit-transform: rotateX(80deg);
+            transform: rotateX(80deg);
+    opacity: 0;
     }
     100% {
-      -webkit-transform: rotateX(0);
-              transform: rotateX(0);
-      opacity: 1;
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+    opacity: 1;
     }
-  }
-  @keyframes flip-in-hor-bottom {
+}
+@keyframes flip-in-hor-bottom {
     0% {
-      -webkit-transform: rotateX(80deg);
-              transform: rotateX(80deg);
-      opacity: 0;
+    -webkit-transform: rotateX(80deg);
+            transform: rotateX(80deg);
+    opacity: 0;
     }
     100% {
-      -webkit-transform: rotateX(0);
-              transform: rotateX(0);
-      opacity: 1;
+    -webkit-transform: rotateX(0);
+        transform: rotateX(0);
+    opacity: 1;
     }
-  }
+}
 
 .registrar_boton:hover{
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
@@ -772,7 +761,7 @@
 .registrarse_select select:hover{
     font-size: 22px;
 }
-  
+
 
 
                             /* Trabajando sobre HTML Contacto */
@@ -788,9 +777,10 @@
 .Contacto-flex{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-bottom: 100px;
 }
+
 
 
 
@@ -808,8 +798,8 @@
 }
 
 .contacto_formulario{
-    width: 400px;
-    height: 380px;
+    width: 480px;
+    height: 600px;
     background-color: mediumslateblue;
     padding: 20px;
     border-radius: 50px;
@@ -887,43 +877,43 @@
 
 .contacto_formulario {
 	-webkit-animation: swing-in-top-fwd 1.5s ease-out both;
-	        animation: swing-in-top-fwd 1.5s ease-out both;
+	animation: swing-in-top-fwd 1.5s ease-out both;
 }
 
 
- @-webkit-keyframes swing-in-top-fwd {
+@-webkit-keyframes swing-in-top-fwd {
     0% {
-      -webkit-transform: rotateX(-100deg);
-              transform: rotateX(-100deg);
-      -webkit-transform-origin: top;
-              transform-origin: top;
-      opacity: 0;
+    -webkit-transform: rotateX(-100deg);
+        transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 0;
     }
     100% {
-      -webkit-transform: rotateX(0deg);
-              transform: rotateX(0deg);
-      -webkit-transform-origin: top;
-              transform-origin: top;
-      opacity: 1;
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 1;
     }
-  }
-  @keyframes swing-in-top-fwd {
+}
+@keyframes swing-in-top-fwd {
     0% {
-      -webkit-transform: rotateX(-100deg);
-              transform: rotateX(-100deg);
-      -webkit-transform-origin: top;
-              transform-origin: top;
-      opacity: 0;
+    -webkit-transform: rotateX(-100deg);
+            transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 0;
     }
     100% {
-      -webkit-transform: rotateX(0deg);
-              transform: rotateX(0deg);
-      -webkit-transform-origin: top;
-              transform-origin: top;
-      opacity: 1;
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 1;
     }
-  }
-  
+}
+
 .contacto_boton:hover{
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     font-size: 22px;
@@ -962,11 +952,44 @@ Footer{
 }
 
 
+                                    /* Aplicando Media Quaris para el Menu Hamburguesa */
+
+@media screen and (max-width:1200px){
+
+.navbar-expand-xl{
+    background-color: gold;
+    }
+    .menu li{
+        font-size: 15px;
+        font-weight: bold;
+        background-color: none;
+        border-radius: 50%;
+        margin-inline: 5px;
+    } 
+    .menu li a{
+        color: black;  
+    }
+
+    .menu li a:hover{
+        font-size: 20px;
+        color: blue;
+        transform: translateX(5px); 
+    }
+    .logo:hover{
+        width: 85px;
+        transition-delay: 0.1s;
+    }
+    .active,
+    .active a{
+        text-decoration: underline double black;
+        font-size: 20px;
+        transform: translateX(5px);
+    }
+}
 
 
 
-
-                                    /* Aplicando Media Quaris para tables */
+                                    /* Aplicando Media Quaris para tablets */
 
 @media screen and (min-width:599px) and (max-width:1024px){
 
@@ -991,12 +1014,24 @@ Footer{
     .registro_inicio a{
         font-size: 15px;
     }
+    .ingreso_inicio a:hover,
+    .registro_inicio a:hover{
+        font-size: 20px;
+    }
+
     .juegos_inicio a,
     .plataformas_inicio a,
     .proximos_inicio a,
     .contacto_inicio a {
-        font-size: 25px;
+        font-size: 24px;
     }
+    .juegos_inicio a:hover,
+    .plataformas_inicio a:hover,
+    .proximos_inicio a:hover,
+    .contacto_inicio a:hover{
+        font-size: 29px;
+    }
+
 
     @keyframes Text {
         20%{
@@ -1023,7 +1058,7 @@ Footer{
 
 
             /* HTML CONSOLAS */
-   
+
     .plataform{
         justify-content: space-around;
         align-items: center;
@@ -1036,7 +1071,6 @@ Footer{
         margin-inline: 10px;
     }
 
-      
     .plataforma_titulo{
         font-size: 18px;}
     
@@ -1119,18 +1153,20 @@ Footer{
 
     @keyframes contactenos_prox {
         25%{
-         color: mediumblue;
+            color: mediumblue;
+            font-size: 50px;
         }
         50%{
-         color: red;
+            color: red;
+            font-size: 50px;
         }
         75%{
-         color: yellow;
-        }
-         
-     }
+            color: yellow;
+            font-size: 50px;
+        }  
+    }
 
-     .lanzamientos_consolas{
+    .lanzamientos_consolas{
         font-size: 12px;
     }
     
@@ -1219,10 +1255,7 @@ Footer{
         transform: translateY(-10px);
     }
 
-
 }
-
-
 
 
                                         /* Aplicando Media Quaris para Celulares */
@@ -1249,6 +1282,10 @@ Footer{
     }
     .ingreso_inicio a,
     .registro_inicio a{
+        font-size: 10px;
+    }
+    .ingreso_inicio a:hover,
+    .registro_inicio a:hover{
         font-size: 11px;
     }
 
@@ -1256,7 +1293,13 @@ Footer{
     .plataformas_inicio a,
     .proximos_inicio a,
     .contacto_inicio a {
-        font-size: 18px;
+        font-size: 15px;
+    }
+    .juegos_inicio a:hover,
+    .plataformas_inicio a:hover,
+    .proximos_inicio a:hover,
+    .contacto_inicio a:hover{
+        font-size: 20px;
     }
 
     @keyframes Text {
@@ -1284,7 +1327,7 @@ Footer{
 
 
             /* HTML CONSOLAS */
-   
+
     .plataform{
         justify-content: space-around;
         align-items: center;
@@ -1323,8 +1366,7 @@ Footer{
                 /* HTML CONTACTO */
 
     .contacto_titulo{
-        font-size: 40px;
-           
+        font-size: 40px;   
     }
     
     .contacto_formulario{
@@ -1357,7 +1399,7 @@ Footer{
 
     .juegos{
         width: 280PX;
-        height: 420px;
+        height: 440px;
         margin-bottom: 30px;
         margin-inline: 10px;
     }
@@ -1381,8 +1423,8 @@ Footer{
     }
 
     .juegos:hover{
-        width: 250px;
-        height: 400px;
+        width: 290px;
+        height: 450px;
         transform: translateY(-10px);
     }
     .juegos_trailers a:hover{
@@ -1401,12 +1443,15 @@ Footer{
     @keyframes contactenos_prox {
         25%{
             color: mediumblue;
+            font-size: 40px;
         }
         50%{
             color: red;
+            font-size: 40px;
         }
         75%{
             color: yellow;
+            font-size: 40px;
         }
             
         }

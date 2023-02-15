@@ -4,42 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Style/style.css">
+    
     <title>Consolas</title>
+    <!-- Logo de pestaña -->
     <link rel="shortcut icon" href="../Multimedia/Imagenes/Logo 1 modificado.png" type="image/x-icon">
+    <!-- Linkeando bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- linkeando CSS -->
+    <link rel="stylesheet" href="../Style/style.css">
+
 </head>
 <body class="Fondo">
-    <header class="header">
-        <div class="logo">
-            <a href="../index.html"><img src="../Multimedia/Imagenes/Logo 1 modificado.png" alt="logo"></a>
-        </div>
-        <div>
-            <nav>
-                <ul class="menu">
-                    <li class="menu-item">
-                        <a href="../index.html">INICIO</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="../Page/Juegos.html">JUEGOS</a>
-                    </li>
-                    <li class="menu-item active">
-                        <a href="../Page/Consolas.html">CONSOLAS</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="../Page/ProximoLanzamientos.html">PROXIMOS LANZAMIENTOS</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="../Page/Contacto.html">CONTACTO</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="../Page/Ingreso.html">INGRESAR</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="../Page/Registro.html">REGISTRAR</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+    <header>
+
+        <!-- Aplicando bootstrap -->
+
+        <nav class="navbar navbar-expand-xl">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="logo" src="../Multimedia/Imagenes/Logo 1 modificado.png" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0  menu">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Page/Juegos.html">JUEGOS</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../Page/Consolas.html">CONSOLAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Page/ProximoLanzamientos.html">NOVEDADES</a>
+                        </li>
+                        <li class="nav-item justify-content-end">
+                            <a class="nav-link" href="../Page/Contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../Page/Ingreso.html">INGRESAR</a>
+                        </li>
+                        <li class="nav-item justify-content-end">
+                            <a class="nav-link" href="../Page/Registro.html">REGISTRARSE</a>
+                        </li>
+                    
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="BUSCAR" aria-label="Search">
+                        <button class="btn btn-primary" type="submit">BUSCAR</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -58,37 +76,37 @@
                 <span class="plataforma_comprar"><button type="button"><a href="./Consolas.html">Comprar</a></button></span>
             </div>
             <div class="plataforma">
-                <img class="plataforma_img" src="../multimedia/Imagenes/Consolas/pc.jpeg" height="220px" alt="PC">
+                <img class="plataforma_img" src="../Multimedia/Imagenes/Consolas/pc.jpeg" height="220px" alt="PC">
                 <h4 class="plataforma_titulo">PC</h4>
                 <h5 class="plataforma_precio">Precio</h5>
                 <span class="plataforma_comprar"><button type="button"><a href="./Consolas.html">Comprar</a></button></span>
             </div>
             <div class="plataforma">
-                <img class="plataforma_img" src="../multimedia/Imagenes/Consolas/Nintendo switch.jpeg" height="220px" alt="NINTENDO SWITCH">
+                <img class="plataforma_img" src="../Multimedia/Imagenes/Consolas/Nintendo switch.jpeg" height="220px" alt="NINTENDO SWITCH">
                 <h4 class="plataforma_titulo">NINTENDO SWITCH</h4>
                 <h5 class="plataforma_precio">Precio</h5>
                 <span class="plataforma_comprar"><button type="button"><a href="./Consolas.html">Comprar</a></button></span>
             </div>
             <div class="plataforma">
-                <img class="plataforma_img" src="../multimedia/Imagenes/Consolas/PS4.png" height="220px" alt="PS4">
+                <img class="plataforma_img" src="../Multimedia/Imagenes/Consolas/PS4.png" height="220px" alt="PS4">
                 <h4 class="plataforma_titulo">PS4</h4>
                 <h5 class="plataforma_precio">Precio</h5>
                 <span class="plataforma_comprar"><button type="button"><a href="./Consolas.html">Comprar</a></button></span>
             </div>
             <div class="plataforma">
-                <img class="plataforma_img" src="../multimedia/Imagenes/Consolas/xbox.png" height="220px" alt="XBOX ONE">
+                <img class="plataforma_img" src="../Multimedia/Imagenes/Consolas/xbox.png" height="220px" alt="XBOX ONE">
                 <h4 class="plataforma_titulo">XBOX ONE</h4>
                 <h5 class="plataforma_precio">Precio</h5>
                 <span class="plataforma_comprar"><button type="button"><a href="./Consolas.html">Comprar</a></button></span>
             </div>
             <div class="plataforma">
-                <img class="plataforma_img" src="../multimedia/Imagenes/Consolas/Nintendo WII U.png" height="220px" alt="PS5">
+                <img class="plataforma_img" src="../Multimedia/Imagenes/Consolas/Nintendo WII U.png" height="220px" alt="PS5">
                 <h4 class="plataforma_titulo">NINTENDO WII U</h4>
                 <h5 class="plataforma_precio">Precio</h5>
                 <span class="plataforma_comprar"><button type="button"><a href="./Consolas.html">Comprar</a></button></span>
             </div>
             <div class="plataforma">
-                <img class="plataforma_img" src="../multimedia/Imagenes/Consolas/Nintendo 3ds.png" height="220px" alt="PS5">
+                <img class="plataforma_img" src="../Multimedia/Imagenes/Consolas/Nintendo 3ds.png" height="220px" alt="PS5">
                 <h4 class="plataforma_titulo">NINTENDO 3DS</h4>
                 <h5 class="plataforma_precio">Precio</h5>
                 <span class="plataforma_comprar"><button type="button"><a href="./Consolas.html">Comprar</a></button></span>
@@ -106,6 +124,8 @@
             <a href=""><img src="../Multimedia/Fondos/icono de linkedin.png" alt="icono de linkedin"></a>
         </div>
     </footer>
-    
+
+<!-- Linkeando javascrip de bootstrap -->    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
