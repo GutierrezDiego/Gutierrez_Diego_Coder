@@ -1,0 +1,26 @@
+                /* Trabajando sobre el Footer */
+
+    /* Alicando Flex en el Footer */
+
+Footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer{
+    margin-block: 40px;
+
+    a{
+        img{
+            height: 80px;
+            margin-inline: 20px;
+            border-radius: 50%;
+
+            &:hover{
+                height: 95px;
+                transition-delay: 0.1s;
+                transform: translateY(-20px);
+                }
+        }
+    }
+}

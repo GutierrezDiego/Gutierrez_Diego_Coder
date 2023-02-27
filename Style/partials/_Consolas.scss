@@ -1,0 +1,68 @@
+                    /*Html Consolas*/
+                    
+                    /* Aplicando flex */
+
+.plataform{
+    margin-top: 60px;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+                        /* Aplicando box-Model */
+
+.plataforma{
+    width: 300PX;
+    height: 350px;
+    background-color: $ColorBoxModel;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    margin-inline: 20px;
+
+    /* Aplicando animaciones en el HTML consolas */
+    &:hover{
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        width: 310px;
+        height: 360px;
+        transform: translateY(-20px);
+    }
+}
+.plataforma_img{
+    width: 100%;
+    margin-bottom: 10px; 
+}
+.plataforma_titulo{
+    font-size: 20px;
+    margin-bottom: 10px; 
+}
+.plataforma_precio{
+    font-size: 18px;
+    margin-bottom: 10px; 
+}
+.plataforma_comprar{
+    margin-bottom: 10px; 
+
+    & a{
+        background-color: $ColorBotonesPrincipal;
+        color: $ColorFontPrincipal;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+    
+        /* Aplicando animaciones en el HTML consolas */
+        &:hover{
+            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+            font-size: 22px;
+        }
+    }
+}
+.plataforma_boton{
+    margin-bottom: 10px;
+}
+
+

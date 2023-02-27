@@ -1,0 +1,50 @@
+                                    /* Aplicando Fondo a las paginas secundarias */
+
+.Fondo{
+    background-image: $FondoPaginasSecundaria; 
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+                    /* trabajando sobre el menu de las paginas secundarias */
+
+.logo{
+    width: 80px;
+    margin: 10px;
+    border-radius: 35%;
+
+    :hover{
+        width: 85px;
+        transition-delay: 0.1s;
+    }
+}
+
+.menu{
+    li{
+        font-size: 20px;
+        font-weight: bold;
+        background-color: gold;
+        border-radius: 50%;
+        margin-inline: 5px;
+    
+        & a{
+            color: $ColorFontPrincipal;
+
+            &:hover{
+            font-size: 25px;
+            color: blue;
+            }
+        }
+    }
+}
+
+.active{
+    text-decoration: underline double $ColorFontPrincipal;
+    font-size: 25px;
+
+    & a{
+        text-decoration: underline double $ColorFontPrincipal;
+        font-size: 25px; 
+    }
+}
+

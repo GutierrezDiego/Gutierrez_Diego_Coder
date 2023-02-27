@@ -1,0 +1,309 @@
+/* Aplicando Media Quaris para tablets */
+
+@media screen and (min-width:599px) and (max-width:1024px){
+/* HTML INDEX */
+    .Menu_Inicio{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4 ,1fr) ;
+        grid-template-areas: 
+            "logo_inicio            logo_inicio         ingreso_inicio"
+            "logo_inicio            logo_inicio         registro_inicio"
+            "juegos_inicio          juegos_inicio       proximos_inicio"
+            "plataformas_inicio     plataformas_inicio  contacto_inicio"
+            ;
+    }
+    .logo_inicio{
+        font-size: 30px;
+    }
+    .ingreso_inicio{
+        a{
+            font-size: 15px; 
+
+            &:hover{
+                font-size: 20px;
+            }
+        }
+    }
+    .registro_inicio{
+        a{
+            font-size: 15px;
+
+            &:hover{
+                font-size: 20px;
+            }
+        }
+    }
+    .juegos_inicio{
+        a{
+            font-size: 24px;
+
+            &:hover{
+                font-size: 29px;
+            }
+        }
+    }
+    .plataformas_inicio{
+        a{
+            font-size: 24px;
+
+            &:hover{
+                font-size: 29px;
+            }
+        }
+    }
+    .proximos_inicio{
+        a{
+            font-size: 24px;
+
+            &:hover{
+                font-size: 29px;
+            }
+        }
+    }
+    .contacto_inicio{
+        a{
+            font-size: 24px;
+
+            &:hover{
+                font-size: 29px;
+            }
+        }
+    }
+
+
+    @keyframes Text {
+        20%{
+            color: yellow;
+            font-size: 25px;
+        }
+        40%{
+            color: lime;
+            font-size: 20px;
+        }
+        50%{
+            color: blue;
+            font-size: 18px;
+        }
+        60%{
+            color: blueviolet;
+            font-size: 20px;
+        }
+        80%{
+            color: red;
+            font-size: 25px;
+        }
+    }
+
+    /* HTML CONSOLAS */
+
+    .plataform{
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-evenly;
+    }
+    .plataforma{
+        width: 270PX;
+        height: 350px;
+        margin-bottom: 30px;
+        margin-inline: 10px;
+
+        &:hover{
+            width: 275px;
+            height: 355px;
+            transform: translateY(-10px);
+        }
+    }
+    .plataforma_titulo{
+        font-size: 18px;
+    }
+    .plataforma_precio{
+        font-size: 15px;
+    }
+    .plataforma_comprar{
+        a{
+            font-size: 15px;
+
+            &:hover{
+                font-size: 18px;
+            }
+        }
+    }
+
+    /* HTML CONTACTO */
+    .contacto_titulo{
+        font-size: 55px;     
+    }
+
+    /* HTML INGRESO */
+    .ingresar_titulo{
+        font-size: 55px;
+    }
+
+    /* HTML JUEGOS */
+    .game{
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-evenly;
+    }
+    .juegos{
+        width: 280PX;
+        height: 420px;
+        margin-bottom: 30px;
+        margin-inline: 10px;
+
+        &:hover{
+            width: 290px;
+            height: 430px;
+            transform: translateY(-10px);
+        }
+    }
+    .juegos_titulo{
+        font-size: 18px;
+    }
+    .juegos_consolas{
+        font-size: 14px;
+    }
+    .juegos_precio {
+        font-size: 16px;
+    }
+    .juegos_trailers{
+        a{
+            font-size: 16px;
+
+            &:hover{
+                font-size: 20px;
+            }
+        }
+    }
+    .juegos_comprar{
+        a{
+            font-size: 16px;
+
+            &:hover{
+                font-size: 20px;
+            }
+        }
+    }
+
+    /* HTML PROXIMOS LANZAMIENTOS */
+    .proximos_lanzamientos_titulo{
+        font-size: 50px;
+    } 
+
+    @keyframes contactenos_prox {
+        25%{
+            color: mediumblue;
+            font-size: 50px;
+        }
+        50%{
+            color: red;
+            font-size: 50px;
+        }
+        75%{
+            color: yellow;
+            font-size: 50px;
+        }  
+    }
+
+    .lanzamientos_consolas{
+        font-size: 12px;
+    }
+    .lanzamientos_titulo{
+        font-size: 18px;
+    }
+    .lanzamientos_fecha{
+        font-size: 14px;
+    }
+    .lanzamientos_trailers{
+        a{
+            font-size: 16px;
+
+            &:hover{
+                color: rgb(205, 12, 12);
+                font-size: 18px;
+            }
+        }
+    }
+    .lanzamientos_contactar{
+        a{
+            font-size: 16px;
+
+            &:hover{
+                font-size: 18px;
+            }
+        }
+    }
+    .lanzamientos{
+        &:hover{
+            width: 290px;
+            height: 490px;
+            transform: translateY(-10px);
+        }
+    }
+
+    /* HTML REGISTRO */
+    .registrarse_titulo{
+        font-size: 60px;  
+    }
+    .registrarse_formulario{
+        width: 480px;
+        height: 400px;
+        font-size: 20px;
+    }
+    .registrar_boton{
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        &:hover{
+            font-size: 20px;
+        }
+    }
+    .registrarse_select{
+        font-size: 18px;
+
+        & select{
+            font-size: 18px;
+
+            &:hover{
+                font-size: 22px;
+            }
+        }
+    }
+    .registrar_olvidaste{
+        font-size: 14px;
+
+        & a{
+            &:hover{
+                font-size: 20px;
+            }
+        }
+    }
+
+    /* FOTEER */
+    .footer{
+        a{
+            img{
+                height: 60px;
+                margin-inline: 10px;
+                border-radius: 50%;
+
+                &:hover{
+                    height: 65px;
+                    transition-delay: 0.1s;
+                    transform: translateY(-10px);
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

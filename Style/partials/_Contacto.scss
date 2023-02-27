@@ -1,0 +1,141 @@
+           /* Trabajando sobre HTML Contacto */
+
+.contacto{
+padding: 40px;
+}
+
+/* Aplicando Flex al formulario */
+
+.Contacto-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.contacto_titulo{
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    color: $ColorFontSecundario;
+    margin-top: 40px;
+    margin-bottom: 40px;    
+}
+
+.contacto_formulario{
+    width: 480px;
+    height: 600px;
+    background-color: $ColorRegistro;
+    padding: 20px;
+    border-radius: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+.contacto_text{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.contacto_boton{
+    background-color: deepskyblue;
+    color: $ColorFontPrincipal;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+
+    &:hover{
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        font-size: 22px;
+        }
+}
+.contacto_nombre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+.contacto_apellido{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+.contacto_mail{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+.contacto_asunto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+} 
+
+/* Aplicando animaciones en el HTML Contacto */
+
+.contacto_titulo{
+    animation: contacto_tit;
+    animation-duration: 8s;
+    animation-delay: 0,5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes contacto_tit {
+    25%{
+        color: yellow;
+    }
+    50%{
+        color: blue;
+    }
+    75%{
+        color: red;
+    }
+}
+
+.contacto_formulario {
+	-webkit-animation: swing-in-top-fwd 1.5s ease-out both;
+	animation: swing-in-top-fwd 1.5s ease-out both;
+}
+
+@-webkit-keyframes swing-in-top-fwd {
+    0% {
+    -webkit-transform: rotateX(-100deg);
+        transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 1;
+    }
+}
+
+@keyframes swing-in-top-fwd {
+    0% {
+    -webkit-transform: rotateX(-100deg);
+            transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 1;
+    }
+}

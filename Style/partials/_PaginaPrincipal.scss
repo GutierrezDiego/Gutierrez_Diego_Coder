@@ -1,0 +1,144 @@
+ /* creando grid menu inicio */
+.Menu_Inicio{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5 ,1fr) ;
+    grid-template-areas: 
+        "logo_inicio    logo_inicio    ingreso_inicio       registro_inicio"
+        "juegos_inicio  juegos_inicio  plataformas_inicio   plataformas_inicio"
+        "juegos_inicio  juegos_inicio  plataformas_inicio   plataformas_inicio"
+        "juegos_inicio  juegos_inicio  proximos_inicio      contacto_inicio"
+        "juegos_inicio  juegos_inicio  proximos_inicio      contacto_inicio"
+        ;
+
+        .logo_inicio{
+            grid-area: logo_inicio;
+            background-image: url(../Multimedia/Fondos/fondo\ 6.png);
+            background-size: contain;
+            font-size: 45px;
+            font-weight: bold;
+            color: $ColorFontSecundario;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+
+        .juegos_inicio{
+            grid-area: juegos_inicio;
+            background-image: url(../Multimedia/Fondos/kamil-s-xny2e95bvgA-unsplash.jpg);
+            background-size: cover;
+            border: $ColorFontPrincipal solid 2px;
+        }
+
+        .plataformas_inicio{
+            grid-area: plataformas_inicio;
+            background-image: url(../Multimedia/Fondos/fondo3.jpg);
+            background-size: cover;
+            border: $ColorFontPrincipal solid 2px;
+        }
+
+        .proximos_inicio{
+            grid-area: proximos_inicio;
+            background-image: url(../Multimedia/Fondos/fondo5.jpg);
+            background-size: cover;
+            border: $ColorFontPrincipal solid 2px;
+        }
+
+        .contacto_inicio{
+            grid-area: contacto_inicio;
+            background-image: url(../Multimedia/Fondos/fondo.jpg);
+            background-size: cover;
+            border: $ColorFontPrincipal solid 2px;
+        }
+
+        .ingreso_inicio{
+            grid-area: ingreso_inicio;
+            background-image: url(../Multimedia/Fondos/fondo2.jpg);
+            background-size: cover;
+            border: $ColorFontPrincipal solid 2px;
+        }
+
+        .registro_inicio{
+            grid-area: registro_inicio;
+            background-image: url(../Multimedia/Fondos/fondo4.jpg);
+            background-size: cover;
+            border: $ColorFontPrincipal solid 2px;
+        }
+
+        /*Animaciones */
+
+        a{
+            transition: all .5s;
+
+            &:hover{
+                font-size: 50px;
+                color: red;
+            }
+        }
+}
+
+.Menu_Inicio > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ingreso_inicio a,
+.registro_inicio a,
+.juegos_inicio a,
+.plataformas_inicio a,
+.proximos_inicio a,
+.contacto_inicio a {
+    text-decoration: none;
+    color: $ColorFontSecundario;
+    background-color: $ColorFontPrincipal;
+    border-radius: 40px;
+    padding: 8px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.Fondo-inicio{
+    background-color: darkslategray;
+}
+
+/*Animacion del logo */
+
+.logo_inicio{
+    animation: Text;
+    animation-duration: 10s;
+    animation-delay: .5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Text {
+    20%{
+        color: yellow;
+        font-size: 40px;
+    }
+    40%{
+        color: lime;
+        font-size: 35px;
+    }
+    50%{
+        color: blue;
+        font-size: 32px;
+    }
+    60%{
+        color: blueviolet;
+        font-size: 35px;
+    }
+    80%{
+        color: red;
+        font-size: 40px;
+    }
+}
+
+
+
+
+
+
+
+

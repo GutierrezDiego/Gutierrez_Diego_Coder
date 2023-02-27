@@ -1,0 +1,158 @@
+                /* Trabajando sobre HTML Registrarse */
+
+.registrarse{
+    padding: 40px; 
+}
+
+/* Aplicando Flex al formulario */
+
+.Registro-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+.registrarse_titulo{
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    color: $ColorFontSecundario;
+    margin-top: 40px;
+    margin-bottom: 40px;    
+}
+
+.registrarse_formulario{
+    width: 480px;
+    height: 450px;
+    background-color: $ColorRegistro;
+    padding: 20px;
+    border-radius: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.registrar_boton{
+    background-color: deepskyblue;
+    color: $ColorFontPrincipal;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    &:hover{
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        font-size: 22px;
+    }
+}
+
+.registrar_texto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.registrar_mail{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.registrar_pass1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.registrar_pass2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.registrarse_select{
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    select{
+        font-size: 18px;
+
+        &:hover{
+            font-size: 22px;
+        }
+    }
+}
+
+.registrar_olvidaste{
+    font-size: 14px;
+    font-weight: bold;
+
+    a{
+        color: blue;
+
+        &:hover{
+            color: red;
+            font-size: 18px;
+        }
+    }
+}
+
+/* Aplicando animaciones en el HTML Registrarse */
+
+.registrarse_titulo{
+    animation: registrarse_tit;
+    animation-duration: 8s;
+    animation-delay: 0,5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes registrarse_tit {
+    25%{
+        color: yellow;
+    }
+    50%{
+        color: blue;
+    }
+    75%{
+        color: red;
+    }
+        
+}
+
+.registrarse_formulario {
+	-webkit-animation: flip-in-hor-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: flip-in-hor-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            
+}
+@-webkit-keyframes flip-in-hor-bottom {
+    0% {
+    -webkit-transform: rotateX(80deg);
+            transform: rotateX(80deg);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+    opacity: 1;
+    }
+}
+@keyframes flip-in-hor-bottom {
+    0% {
+    -webkit-transform: rotateX(80deg);
+            transform: rotateX(80deg);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: rotateX(0);
+        transform: rotateX(0);
+    opacity: 1;
+    }
+}
+

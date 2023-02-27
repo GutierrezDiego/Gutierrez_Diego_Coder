@@ -1,0 +1,325 @@
+/* Aplicando Media Quaris para Celulares */
+
+@media screen and (max-width:599px){
+
+    /* HTML INDEX */
+    .Menu_Inicio{
+        grid-template-columns: 70% 30%;
+        grid-template-rows: repeat(6 ,1fr) ;
+        grid-template-areas: 
+            "logo_inicio        ingreso_inicio"
+            "logo_inicio        registro_inicio"
+            "plataformas_inicio plataformas_inicio"              
+            "juegos_inicio      juegos_inicio"     
+            "proximos_inicio    proximos_inicio" 
+            "contacto_inicio    contacto_inicio"
+            ;
+    }
+
+    .logo_inicio{
+        font-size: 18px;
+    }
+    .ingreso_inicio{
+        a{
+            font-size: 10px;
+
+            &:hover{
+                font-size: 11px;
+            }
+        }
+    }
+    .registro_inicio{
+        a{
+            font-size: 10px;
+
+            &:hover{
+                font-size: 11px;
+            }
+        }
+    }
+    .juegos_inicio{
+        a{
+            font-size: 15px;
+
+            &:hover{
+                font-size: 20px;
+            }
+        }
+    }
+    .plataformas_inicio{
+        a{
+            font-size: 15px;
+
+            &:hover{
+                font-size: 20px;
+            }
+        }
+    }
+    .proximos_inicio{
+        a{
+            font-size: 15px;
+
+            &:hover{
+                font-size: 20px;
+            }
+        }
+    } 
+    .contacto_inicio{
+        a{
+            font-size: 15px;
+
+            &:hover{
+                font-size: 20px;
+            }
+        }
+    }
+
+    @keyframes Text {
+        20%{
+            color: yellow;
+            font-size: 15px;
+        }
+        40%{
+            color: lime;
+            font-size: 10px;
+        }
+        50%{
+            color: blue;
+            font-size: 8px;
+        }
+        60%{
+            color: blueviolet;
+            font-size: 10px;
+        }
+        80%{
+            color: red;
+            font-size: 15px;
+        }
+    }
+
+    /* HTML CONSOLAS */
+    .plataform{
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-evenly;
+    }
+    .plataforma{
+        width: 250PX;
+        height: 330px;
+        border-radius: 20px;
+        margin-bottom: 30px;
+        margin-inline: 10px;
+
+        &:hover{
+            width: 255px;
+            height: 335px;
+            transform: translateY(-10px);
+        }
+    }
+    .plataforma_img{
+        width: 100%;
+    }
+    .plataforma_titulo{
+        font-size: 15px;
+    }
+    .plataforma_precio{
+        font-size: 12px;
+    }
+    .plataforma_comprar{
+        a{
+            font-size: 12px;
+
+            &:hover{
+                font-size: 15px;
+            }
+        }
+    }
+
+    /* HTML CONTACTO */
+    .contacto_titulo{
+        font-size: 40px;   
+    }
+    .contacto_formulario{
+        width: 360px;
+        height: 420px;
+        font-size: 12px;  
+    }
+
+    /* HTML INGRESO */
+    .ingresar_titulo{
+        font-size: 40px;
+    }
+    .ingresar_formulario{ 
+        width: 550px;
+        height: 380px;
+        font-size: 20px;   
+    }
+
+    /* HTML JUEGOS */
+    .game{
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-around;
+    }
+    .juegos{
+        width: 280PX;
+        height: 440px;
+        margin-bottom: 30px;
+        margin-inline: 10px;
+
+        &:hover{
+            width: 290px;
+            height: 450px;
+            transform: translateY(-10px);
+        }
+    }
+    .juegos_titulo{
+        font-size: 15px;
+    }
+    .juegos_consolas{
+        font-size: 12px;
+    }
+    .juegos_precio{
+        font-size: 14px;
+    }
+    .juegos_trailers{
+        a{
+            font-size: 12px;
+
+            &:hover{
+                font-size: 16px;
+            }
+        }
+    }
+    .juegos_comprar{
+        a{
+            font-size: 14px;
+
+            &:hover{
+                font-size: 16px;
+            }
+        }
+    }
+
+    /* HTML PROXIMOS LANZAMIENTOS */
+    .proximos_lanzamientos_titulo{
+        font-size: 40px;
+    } 
+
+    @keyframes contactenos_prox {
+        25%{
+            color: mediumblue;
+            font-size: 40px;
+        }
+        50%{
+            color: red;
+            font-size: 40px;
+        }
+        75%{
+            color: yellow;
+            font-size: 40px;
+        }
+            
+    }
+
+    .lanzamientos_consolas{
+        font-size: 10px;
+    }
+    .lanzamientos_titulo{
+        font-size: 14px;
+    }
+    .lanzamientos_fecha{
+        font-size: 10px;
+    }
+    .lanzamientos_trailers{
+        a{
+            font-size: 12px; 
+
+            &:hover{
+                color: rgb(205, 12, 12);
+                font-size: 14px;
+            }
+        }
+    }
+    .lanzamientos_contactar{
+        a{
+            font-size: 14px;
+
+            &:hover{
+                font-size: 16px;
+            }
+        }
+    }
+    .lanzamientos{
+        &:hover{
+            width: 290px;
+            height: 490px;
+            transform: translateY(-10px);
+        }
+    }
+
+    /* HTML REGISTRO */
+    .registrarse_titulo{
+        font-size: 50px;  
+    }
+    .registrarse_formulario{
+        width: 600px;
+        height: 400px;
+        font-size: 14px;
+    }
+    .registrar_boton{
+        font-size: 12px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        &:hover{
+            font-size: 14px;
+        }
+    }
+    .registrarse_select{
+        font-size: 12px;
+
+        & select{
+            font-size: 12px;
+
+            &:hover{
+                font-size: 14px;
+            }
+        }
+    }
+    .registrar_olvidaste{
+        font-size: 10px;
+
+        & a{
+            &:hover{
+                font-size: 12px;
+            }
+        }
+    }
+
+    /* FOTEER */
+    .footer{
+        a{
+            img{
+                height: 45px;
+                margin-inline: 5px;
+                border-radius: 50%;
+
+                &:hover{
+                    height: 50px;
+                    transition-delay: 0.1s;
+                    transform: translateY(-5px);
+                }
+            }
+        }
+    }
+
+    
+
+
+
+
+
+
+
+}
