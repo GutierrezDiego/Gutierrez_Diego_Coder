@@ -17,8 +17,7 @@
             grid-area: logo_inicio;
             background-image: url(../Multimedia/Fondos/fondo\ 6.png);
             background-size: contain;
-            font-size: 45px;
-            font-weight: bold;
+            
             color: $ColorFontSecundario;
             box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
         }
@@ -101,15 +100,44 @@
 .Fondo-inicio{
     background-color: darkslategray;
 }
+.Fondo-Acordion{
+    background-color: grey;
+}
+.TextoAcordion{
+    font-size: 25px;
+    text-align: center;
+}
+.Mapa-Acordion{
+    display: flex;
+    justify-content: center;
+}
+.Mapa-tamaño{
+    width: 700px;
+    height: 600px;
+}
+.Negocio-Acordion{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.Imagen-Acordion{
+    height: 550px;
+    width: 550px;
+}
 
 /*Animacion del logo */
 
-.logo_inicio{
+.Text{
     animation: Text;
     animation-duration: 10s;
     animation-delay: .5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+
+    font-size: 45px;
+    font-weight: bold;
+    color: $ColorFontSecundario;
 }
 
 @keyframes Text {

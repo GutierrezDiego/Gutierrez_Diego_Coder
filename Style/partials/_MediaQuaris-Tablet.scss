@@ -12,8 +12,8 @@
             "plataformas_inicio     plataformas_inicio  contacto_inicio"
             ;
     }
-    .logo_inicio{
-        font-size: 30px;
+    .Text{
+        font-size: 35px;
     }
     .ingreso_inicio{
         a{
@@ -74,24 +74,35 @@
     @keyframes Text {
         20%{
             color: yellow;
-            font-size: 25px;
+            font-size: 30px;
         }
         40%{
             color: lime;
-            font-size: 20px;
+            font-size: 25px;
         }
         50%{
             color: blue;
-            font-size: 18px;
+            font-size: 20px;
         }
         60%{
             color: blueviolet;
-            font-size: 20px;
+            font-size: 25px;
         }
         80%{
             color: red;
-            font-size: 25px;
+            font-size: 30px;
         }
+    }
+    .Mapa-tamaño{
+        width: 500px;
+        height: 400px;
+    }
+    .Imagen-Acordion{
+        height: 400px;
+        width: 400px;
+    }
+    .TextoAcordion{
+        font-size: 22px;
     }
 
     /* HTML CONSOLAS */

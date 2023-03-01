@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@200;400;600;900&family=Righteous&display=swap");
 * {
   margin: 0;
@@ -20,8 +21,6 @@
   grid-area: logo_inicio;
   background-image: url(../Multimedia/Fondos/fondo\ 6.png);
   background-size: contain;
-  font-size: 45px;
-  font-weight: bold;
   color: white;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
@@ -94,13 +93,47 @@
   background-color: darkslategray;
 }
 
+.Fondo-Acordion {
+  background-color: grey;
+}
+
+.TextoAcordion {
+  font-size: 25px;
+  text-align: center;
+}
+
+.Mapa-Acordion {
+  display: flex;
+  justify-content: center;
+}
+
+.Mapa-tamaño {
+  width: 700px;
+  height: 600px;
+}
+
+.Negocio-Acordion {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.Imagen-Acordion {
+  height: 550px;
+  width: 550px;
+}
+
 /*Animacion del logo */
-.logo_inicio {
+.Text {
   animation: Text;
   animation-duration: 10s;
   animation-delay: 0.5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+  font-size: 45px;
+  font-weight: bold;
+  color: white;
 }
 
 @keyframes Text {
@@ -855,6 +888,10 @@ Footer {
     font-size: 20px;
     transform: translateX(5px);
   }
+  .Imagen-Acordion {
+    height: 450px;
+    width: 450px;
+  }
 }
 /* Aplicando Media Quaris para tablets */
 @media screen and (min-width: 599px) and (max-width: 1024px) {
@@ -864,8 +901,8 @@ Footer {
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas: "logo_inicio            logo_inicio         ingreso_inicio" "logo_inicio            logo_inicio         registro_inicio" "juegos_inicio          juegos_inicio       proximos_inicio" "plataformas_inicio     plataformas_inicio  contacto_inicio";
   }
-  .logo_inicio {
-    font-size: 30px;
+  .Text {
+    font-size: 35px;
   }
   .ingreso_inicio a {
     font-size: 15px;
@@ -906,24 +943,35 @@ Footer {
   @keyframes Text {
     20% {
       color: yellow;
-      font-size: 25px;
+      font-size: 30px;
     }
     40% {
       color: lime;
-      font-size: 20px;
+      font-size: 25px;
     }
     50% {
       color: blue;
-      font-size: 18px;
+      font-size: 20px;
     }
     60% {
       color: blueviolet;
-      font-size: 20px;
+      font-size: 25px;
     }
     80% {
       color: red;
-      font-size: 25px;
+      font-size: 30px;
     }
+  }
+  .Mapa-tamaño {
+    width: 500px;
+    height: 400px;
+  }
+  .Imagen-Acordion {
+    height: 400px;
+    width: 400px;
+  }
+  .TextoAcordion {
+    font-size: 22px;
   }
   /* HTML CONSOLAS */
   .plataform {
@@ -1097,8 +1145,8 @@ Footer {
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas: "logo_inicio        ingreso_inicio" "logo_inicio        registro_inicio" "plataformas_inicio plataformas_inicio" "juegos_inicio      juegos_inicio" "proximos_inicio    proximos_inicio" "contacto_inicio    contacto_inicio";
   }
-  .logo_inicio {
-    font-size: 18px;
+  .Text {
+    font-size: 20px;
   }
   .ingreso_inicio a {
     font-size: 10px;
@@ -1139,24 +1187,35 @@ Footer {
   @keyframes Text {
     20% {
       color: yellow;
-      font-size: 15px;
+      font-size: 17px;
     }
     40% {
       color: lime;
-      font-size: 10px;
+      font-size: 14px;
     }
     50% {
       color: blue;
-      font-size: 8px;
+      font-size: 12px;
     }
     60% {
       color: blueviolet;
-      font-size: 10px;
+      font-size: 14px;
     }
     80% {
       color: red;
-      font-size: 15px;
+      font-size: 17px;
     }
+  }
+  .Mapa-tamaño {
+    width: 300px;
+    height: 300px;
+  }
+  .Imagen-Acordion {
+    height: 300px;
+    width: 300px;
+  }
+  .TextoAcordion {
+    font-size: 18px;
   }
   /* HTML CONSOLAS */
   .plataform {
