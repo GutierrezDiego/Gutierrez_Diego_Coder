@@ -1,5 +1,12 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@200;400;600;900&family=Righteous&display=swap");
+/*Aplicando @extend al logo de pagina secundaria*/
+.logo {
+  width: 80px;
+  margin: 10px;
+  border-radius: 35%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -89,6 +96,7 @@
   font-weight: bold;
 }
 
+/*Aplicando Maps*/
 .Fondo-inicio {
   background-color: darkslategray;
 }
@@ -100,6 +108,7 @@
 .TextoAcordion {
   font-size: 25px;
   text-align: center;
+  color: black;
 }
 
 .Mapa-Acordion {
@@ -158,6 +167,48 @@
     font-size: 40px;
   }
 }
+/* Animacion entrada Menu inicio */
+.menu-item {
+  animation: roll-in-blurred-top 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+@keyframes roll-in-blurred-top {
+  0% {
+    transform: translateY(-800px) rotate(-720deg);
+    filter: blur(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+/* Aplicando @For */
+.menu_item1 {
+  animation-delay: 0.4s;
+}
+
+.menu_item2 {
+  animation-delay: 0.8s;
+}
+
+.menu_item3 {
+  animation-delay: 1.2s;
+}
+
+.menu_item4 {
+  animation-delay: 1.6s;
+}
+
+.menu_item5 {
+  animation-delay: 2s;
+}
+
+.menu_item6 {
+  animation-delay: 2.4s;
+}
+
 /* Aplicando Fondo a las paginas secundarias */
 .Fondo {
   background-image: url(../Multimedia/Fondos/rick-rothenberg-LlAI-kQJs64-unsplash.jpg);
@@ -166,16 +217,6 @@
 }
 
 /* trabajando sobre el menu de las paginas secundarias */
-.logo {
-  width: 80px;
-  margin: 10px;
-  border-radius: 35%;
-}
-.logo :hover {
-  width: 85px;
-  transition-delay: 0.1s;
-}
-
 .menu li {
   font-size: 20px;
   font-weight: bold;
@@ -842,6 +883,7 @@ Footer {
   margin-block: 40px;
 }
 .footer a img {
+  /*Aplicando Map-get*/
   height: 80px;
   margin-inline: 20px;
   border-radius: 50%;
@@ -1385,7 +1427,7 @@ Footer {
   }
   /* FOTEER */
   .footer a img {
-    height: 45px;
+    height: 40px;
     margin-inline: 5px;
     border-radius: 50%;
   }

@@ -97,15 +97,18 @@
     font-weight: bold;
 }
 
-.Fondo-inicio{
-    background-color: darkslategray;
+/*Aplicando Maps*/
+
+@each $lugar, $color in $fondo{
+    .Fondo-#{$lugar}{
+        background-color: $color;
+    }
 }
-.Fondo-Acordion{
-    background-color: grey;
-}
+
 .TextoAcordion{
     font-size: 25px;
     text-align: center;
+    color: $ColorFontPrincipal;
 }
 .Mapa-Acordion{
     display: flex;
@@ -163,6 +166,31 @@
     }
 }
 
+/* Animacion entrada Menu inicio */
+.menu-item {
+	animation: roll-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+@keyframes roll-in-blurred-top {
+0% {
+    transform: translateY(-800px) rotate(-720deg);
+    filter: blur(50px);
+    opacity: 0;
+}
+100% {
+    transform: translateY(0) rotate(0deg);
+    filter: blur(0);
+    opacity: 1;
+}
+}
+
+/* Aplicando @For */
+
+@for $delay from 1 through 6 {
+    .menu_item#{$delay}{
+        animation-delay: $delay*0.4s;
+    }
+}
 
 
 

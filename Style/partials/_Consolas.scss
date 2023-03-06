@@ -5,9 +5,7 @@
 .plataform{
     margin-top: 60px;
     padding: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    @include flex (flex, wrap, space-evenly);
 }
 
                         /* Aplicando box-Model */

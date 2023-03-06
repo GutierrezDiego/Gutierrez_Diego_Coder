@@ -12,12 +12,13 @@ Footer{
 
     a{
         img{
-            height: 80px;
-            margin-inline: 20px;
+            /*Aplicando Map-get*/
+            height: map-get($iconos,tamano);
+            margin-inline: map-get($iconos,distancia);
             border-radius: 50%;
 
             &:hover{
-                height: 95px;
+                height: map-get($iconos, animacion);
                 transition-delay: 0.1s;
                 transform: translateY(-20px);
                 }

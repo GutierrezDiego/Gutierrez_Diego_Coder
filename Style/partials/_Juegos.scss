@@ -5,9 +5,7 @@
 .game{
     padding: 40px;
     margin-top: 60px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    @include flex (flex, wrap, space-evenly);
 }
 
 /* Aplicando box-Model */

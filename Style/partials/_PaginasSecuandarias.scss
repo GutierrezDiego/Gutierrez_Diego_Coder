@@ -9,14 +9,7 @@
                     /* trabajando sobre el menu de las paginas secundarias */
 
 .logo{
-    width: 80px;
-    margin: 10px;
-    border-radius: 35%;
-
-    :hover{
-        width: 85px;
-        transition-delay: 0.1s;
-    }
+    @extend %logo;
 }
 
 .menu{
@@ -37,6 +30,7 @@
         }
     }
 }
+
 
 .active{
     text-decoration: underline double $ColorFontPrincipal;

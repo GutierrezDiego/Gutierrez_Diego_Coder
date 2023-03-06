@@ -12,3 +12,31 @@ $ColorBoxModel: dimgray;
 $ColorRegistro: mediumslateblue;
 
 $FondoPaginasSecundaria: url(../Multimedia/Fondos/rick-rothenberg-LlAI-kQJs64-unsplash.jpg);
+
+// Aplicando @Mixin en Consolas y Juegos
+@mixin flex ($display, $wrap, $justify){
+    display: $display;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+}
+
+/*Aplicando @extend al logo de pagina secundaria*/
+%logo {
+    width: 80px;
+    margin: 10px;
+    border-radius: 35%;
+}
+
+// Aplicando Maps a pagina principal
+$fondo: (
+    inicio: darkslategray,
+    Acordion: grey,
+);
+
+// Aplicando Map-get al footer
+$iconos:(
+    tamano: 80px,
+    distancia: 20px,
+    animacion: 95px,
+)
+
