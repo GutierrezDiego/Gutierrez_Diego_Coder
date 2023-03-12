@@ -1,24 +1,22 @@
 /* Aplicando Media Quaris para el Menu Hamburguesa */
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:1199.5px){
 
     .navbar-expand-xl{
-        background-color: gold;
+        background-color: gray;
     }
 
     .menu{
         li{
-            font-size: 15px;
             font-weight: bold;
-            background-color: none;
-            border-radius: 50%;
+            background-color: gray;
             margin-inline: 5px;
+            
 
             & a{
                 color: black;
 
                 &:hover{
-                    font-size: 20px;
                     color: blue;
                     transform: translateX(5px); 
                     }
@@ -33,18 +31,37 @@
 
     .active{
         text-decoration: underline double black;
-        font-size: 20px;
-        transform: translateX(5px);
+        font-size: 24px;
+        transform: translateX(10px);
 
         & a{
             text-decoration: underline double black;
-            font-size: 20px;
-            transform: translateX(5px);
+            font-size: 24px;
+            transform: translateX(10px);
             }
     }
     .Imagen-Acordion{
         height: 450px;
         width: 450px;
     }
+        /* HTML PROXIMOS LANZAMIENTOS */
+        .proximos_lanzamientos_titulo{
+            font-size: 62px;
+        } 
+    
+        @keyframes contactenos_prox {
+            25%{
+                color: mediumblue;
+                font-size: 62px;
+            }
+            50%{
+                color: red;
+                font-size: 62px;
+            }
+            75%{
+                color: yellow;
+                font-size: 62px;
+            }  
+        }
     
 }
